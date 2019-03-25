@@ -13,6 +13,7 @@ private:
 public:
 	Date(int,int,int);
 	Date();
+	~Date();
 	friend ostream& operator<<(ostream& out, const Date& x);
 	friend istream& operator>>(istream& in, Date& x);
 	bool operator==(const Date&);
