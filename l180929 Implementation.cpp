@@ -38,6 +38,13 @@ Date::Date(int y, int x, int z){
 	}
 }
 
+//Destructor
+Date::~Date(){
+	day=1;
+	month=1;
+	year=2000;
+}
+
 //Insertion operator overloading
 ostream& operator<<(ostream& out, const Date& x){
 	out<< x.monthNames[x.month];
